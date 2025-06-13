@@ -1,35 +1,48 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hola mundo | El Mejor Vendedor</title>
     <meta name="description" content="Un saludo para todos los humanos - Increase your sales and revenue with our premium sales solutions.">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 <body class="bg-gray-900 text-gray-100 font-sans antialiased">
-    <header class="fixed w-full bg-gray-900/95 backdrop-blur-sm border-b border-gray-800 z-50" x-data="{ isOpen: false }">
+    <header class="fixed w-full bg-gray-900/95 backdrop-blur-sm border-b border-gray-800 z-50">
         <nav class="container mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
-                <a href="/" class="text-2xl font-bold bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">
+                <a href="https://soypepediaz.github.io/hola-mundo--2025-06-13-u6j1m" class="text-2xl font-bold bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent hover:scale-105 transition-transform duration-300">
                     El Mejor Vendedor
                 </a>
                 <div class="hidden md:flex space-x-8">
-                    <a href="#features" class="text-gray-300 hover:text-white transition-colors duration-300">Features</a>
-                    <a href="#benefits" class="text-gray-300 hover:text-white transition-colors duration-300">Benefits</a>
-                    <a href="#contact" class="text-gray-300 hover:text-white transition-colors duration-300">Contact</a>
+                    <a href="#features" class="text-gray-300 hover:text-white hover:scale-105 transition-all duration-300">Features</a>
+                    <a href="#benefits" class="text-gray-300 hover:text-white hover:scale-105 transition-all duration-300">Benefits</a>
+                    <a href="#testimonials" class="text-gray-300 hover:text-white hover:scale-105 transition-all duration-300">Testimonials</a>
+                    <a href="#about" class="text-gray-300 hover:text-white hover:scale-105 transition-all duration-300">About Us</a>
+                    <a href="#faq" class="text-gray-300 hover:text-white hover:scale-105 transition-all duration-300">FAQ</a>
+                    <a href="#contact" class="text-gray-300 hover:text-white hover:scale-105 transition-all duration-300">Contact</a>
                 </div>
-                <button @click="isOpen = !isOpen" class="md:hidden text-gray-300 hover:text-white">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                    </svg>
+                <button class="mobile-menu-button md:hidden text-gray-300 hover:text-white" aria-label="Toggle mobile menu">
+                    <i class="fas fa-bars text-2xl"></i>
                 </button>
             </div>
-            <div x-show="isOpen" class="md:hidden mt-4" @click.away="isOpen = false">
+            <div class="mobile-menu hidden md:hidden mt-4">
                 <div class="flex flex-col space-y-4">
                     <a href="#features" class="text-gray-300 hover:text-white transition-colors duration-300">Features</a>
                     <a href="#benefits" class="text-gray-300 hover:text-white transition-colors duration-300">Benefits</a>
+                    <a href="#testimonials" class="text-gray-300 hover:text-white transition-colors duration-300">Testimonials</a>
+                    <a href="#about" class="text-gray-300 hover:text-white transition-colors duration-300">About Us</a>
+                    <a href="#faq" class="text-gray-300 hover:text-white transition-colors duration-300">FAQ</a>
                     <a href="#contact" class="text-gray-300 hover:text-white transition-colors duration-300">Contact</a>
                 </div>
             </div>
@@ -37,17 +50,17 @@
     </header>
 
     <main>
-        <section class="relative min-h-screen flex items-center justify-center py-24 px-6">
-            <div class="absolute inset-0 bg-gradient-to-br from-purple-900/20 to-pink-900/20"></div>
+        <section class="relative min-h-screen flex items-center justify-center py-24 px-6" style="background-image: url('https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=1920'); background-size: cover; background-position: center;">
+            <div class="absolute inset-0 bg-gradient-to-br from-purple-900/90 to-pink-900/90"></div>
             <div class="container mx-auto text-center relative z-10">
-                <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold mb-8 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-                    Hola mundo.
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold mb-8 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent animate-fade-in">
+                    Transform Your Sales Performance
                 </h1>
                 <p class="text-xl md:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto">
-                    Un saludo para todos los humanos
+                    Unlock unprecedented growth with our revolutionary sales enhancement platform. Join thousands of successful businesses achieving record-breaking results.
                 </p>
                 <a href="https://elmejorvendedor.com" class="inline-block bg-gradient-to-r from-purple-600 to-pink-600 py-4 px-8 rounded-full text-lg font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
-                    Start Selling Now
+                    Start Your Success Journey
                 </a>
             </div>
         </section>
@@ -55,7 +68,7 @@
         <section id="features" class="py-24 px-6 bg-gray-800/50">
             <div class="container mx-auto">
                 <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-                    Premium Sales Features
+                    Revolutionary Sales Features
                 </h2>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
                     <div class="bg-gray-800 rounded-2xl p-8 shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300">
@@ -64,8 +77,8 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                             </svg>
                         </div>
-                        <h3 class="text-xl font-bold mb-4">Vender</h3>
-                        <p class="text-gray-400">Maximize your sales potential with our advanced selling tools and strategies.</p>
+                        <h3 class="text-xl font-bold mb-4">AI-Powered Sales Analytics</h3>
+                        <p class="text-gray-400">Leverage cutting-edge artificial intelligence to analyze customer behavior, predict trends, and optimize your sales strategy in real-time. Increase conversion rates by up to 45%.</p>
                     </div>
                     <div class="bg-gray-800 rounded-2xl p-8 shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300">
                         <div class="text-pink-400 mb-4">
@@ -73,8 +86,8 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
                             </svg>
                         </div>
-                        <h3 class="text-xl font-bold mb-4">Vender más</h3>
-                        <p class="text-gray-400">Scale your business with proven sales techniques and automation.</p>
+                        <h3 class="text-xl font-bold mb-4">Automated Lead Generation</h3>
+                        <p class="text-gray-400">Our intelligent system identifies and qualifies leads 24/7, ensuring your sales pipeline is always full. Generate 3x more qualified leads with 50% less effort.</p>
                     </div>
                     <div class="bg-gray-800 rounded-2xl p-8 shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300">
                         <div class="text-purple-400 mb-4">
@@ -82,8 +95,8 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"></path>
                             </svg>
                         </div>
-                        <h3 class="text-xl font-bold mb-4">Vender siempre</h3>
-                        <p class="text-gray-400">Maintain consistent sales growth with our sustainable strategies.</p>
+                        <h3 class="text-xl font-bold mb-4">Smart CRM Integration</h3>
+                        <p class="text-gray-400">Seamlessly integrate with your existing tools while gaining powerful new capabilities. Reduce administrative work by 75% and focus on what matters - closing deals.</p>
                     </div>
                 </div>
             </div>
@@ -92,20 +105,132 @@
         <section id="benefits" class="py-24 px-6">
             <div class="container mx-auto">
                 <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-                    Why Choose Us
+                    Transformative Benefits
                 </h2>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-                    <div class="bg-gradient-to-br from-purple-900/50 to-pink-900/50 rounded-2xl p-8">
-                        <h3 class="text-xl font-bold mb-4">Más ventas</h3>
-                        <p class="text-gray-300">Increase your revenue streams and grow your business exponentially.</p>
+                    <div class="bg-gradient-to-br from-purple-900/50 to-pink-900/50 rounded-2xl p-8 transform hover:scale-105 transition-all duration-300">
+                        <h3 class="text-xl font-bold mb-4">Accelerated Revenue Growth</h3>
+                        <p class="text-gray-300">Experience average revenue increases of 127% within the first six months. Our clients typically see ROI within 60 days of implementation.</p>
                     </div>
-                    <div class="bg-gradient-to-br from-purple-900/50 to-pink-900/50 rounded-2xl p-8">
-                        <h3 class="text-xl font-bold mb-4">Más margen</h3>
-                        <p class="text-gray-300">Optimize your profit margins with our strategic pricing models.</p>
+                    <div class="bg-gradient-to-br from-purple-900/50 to-pink-900/50 rounded-2xl p-8 transform hover:scale-105 transition-all duration-300">
+                        <h3 class="text-xl font-bold mb-4">Enhanced Profit Margins</h3>
+                        <p class="text-gray-300">Optimize pricing strategies and reduce operational costs, resulting in average margin improvements of 35% across our client base.</p>
                     </div>
-                    <div class="bg-gradient-to-br from-purple-900/50 to-pink-900/50 rounded-2xl p-8">
-                        <h3 class="text-xl font-bold mb-4">Más dineros para ti</h3>
-                        <p class="text-gray-300">Maximize your earnings and achieve financial success.</p>
+                    <div class="bg-gradient-to-br from-purple-900/50 to-pink-900/50 rounded-2xl p-8 transform hover:scale-105 transition-all duration-300">
+                        <h3 class="text-xl font-bold mb-4">Sustainable Growth</h3>
+                        <p class="text-gray-300">Build lasting customer relationships and recurring revenue streams. 92% of our clients maintain sustained growth for 3+ years.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="py-24 px-6 bg-gray-800/50">
+            <div class="container mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+                    Client Success Stories
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="bg-gray-800 rounded-xl p-6 hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+                        <div class="flex text-yellow-400 mb-4">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-300 mb-4">"Implemented the AI analytics tool and saw a 156% increase in sales within 3 months. The automated lead generation saved our team 20 hours per week."</p>
+                        <div class="text-sm text-gray-400">
+                            <p class="font-semibold">Sarah Johnson</p>
+                            <p>Sales Director, TechCorp</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-800 rounded-xl p-6 hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+                        <div class="flex text-yellow-400 mb-4">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-300 mb-4">"The smart CRM integration revolutionized our workflow. Our team now closes 40% more deals with half the effort."</p>
+                        <div class="text-sm text-gray-400">
+                            <p class="font-semibold">Michael Chen</p>
+                            <p>CEO, GrowthMax Solutions</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-800 rounded-xl p-6 hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+                        <div class="flex text-yellow-400 mb-4">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half"></i>
+                        </div>
+                        <p class="text-gray-300 mb-4">"Transformed our sales process completely. Revenue up 82% YoY, and customer satisfaction scores improved by 45%."</p>
+                        <div class="text-sm text-gray-400">
+                            <p class="font-semibold">Emma Rodriguez</p>
+                            <p>Head of Sales, GlobalTrade Inc</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-800 rounded-xl p-6 hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+                        <div class="flex text-yellow-400 mb-4">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-300 mb-4">"Best investment we've made. The ROI was evident within weeks, and the ongoing support is exceptional."</p>
+                        <div class="text-sm text-gray-400">
+                            <p class="font-semibold">David Thompson</p>
+                            <p>Founder, Startup Success</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="py-24 px-6">
+            <div class="container mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+                    About Us
+                </h2>
+                <div class="max-w-4xl mx-auto space-y-8">
+                    <p class="text-gray-300 text-lg leading-relaxed">
+                        Founded in 2020, El Mejor Vendedor emerged from a simple yet powerful vision: to revolutionize how businesses approach sales in the digital age. Our founders, with over 30 years of combined experience in sales and technology, recognized the need for a more intelligent, data-driven approach to sales enhancement.
+                    </p>
+                    <p class="text-gray-300 text-lg leading-relaxed">
+                        Our mission is to empower businesses with cutting-edge sales tools and strategies that drive sustainable growth. We believe in innovation, integrity, and results-driven solutions. Our core values of continuous improvement, customer success, and technological excellence guide everything we do. Today, we're proud to serve thousands of businesses worldwide, helping them achieve their sales goals and beyond.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="py-24 px-6 bg-gray-800/50">
+            <div class="container mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+                    Frequently Asked Questions
+                </h2>
+                <div class="max-w-3xl mx-auto space-y-6">
+                    <div class="bg-gray-800 rounded-xl p-6 hover:shadow-xl transition-all duration-300">
+                        <h3 class="text-xl font-bold mb-4">How quickly can I see results?</h3>
+                        <p class="text-gray-300">Most clients see measurable improvements within the first 30 days, with significant ROI typically achieved within 60-90 days of implementation.</p>
+                    </div>
+                    <div class="bg-gray-800 rounded-xl p-6 hover:shadow-xl transition-all duration-300">
+                        <h3 class="text-xl font-bold mb-4">What kind of support do you offer?</h3>
+                        <p class="text-gray-300">We provide 24/7 technical support, regular strategy sessions, and dedicated account managers for all enterprise clients. Training and onboarding are included.</p>
+                    </div>
+                    <div class="bg-gray-800 rounded-xl p-6 hover:shadow-xl transition-all duration-300">
+                        <h3 class="text-xl font-bold mb-4">Can I integrate with my existing CRM?</h3>
+                        <p class="text-gray-300">Yes, our platform integrates seamlessly with all major CRM systems including Salesforce, HubSpot, and Microsoft Dynamics.</p>
+                    </div>
+                    <div class="bg-gray-800 rounded-xl p-6 hover:shadow-xl transition-all duration-300">
+                        <h3 class="text-xl font-bold mb-4">What's your pricing model?</h3>
+                        <p class="text-gray-300">We offer flexible, scalable pricing based on your business size and needs. Contact us for a customized quote.</p>
+                    </div>
+                    <div class="bg-gray-800 rounded-xl p-6 hover:shadow-xl transition-all duration-300">
+                        <h3 class="text-xl font-bold mb-4">Is there a minimum contract period?</h3>
+                        <p class="text-gray-300">While we offer month-to-month options, our best results and pricing are achieved with annual commitments.</p>
                     </div>
                 </div>
             </div>
@@ -113,14 +238,14 @@
 
         <section id="contact" class="py-24 px-6 bg-gradient-to-br from-purple-900/20 to-pink-900/20">
             <div class="container mx-auto text-center">
-                <h2 class="text-3xl md:text-4xl font-bold mb-8">Ready to boost your sales?</h2>
-                <p class="text-xl text-gray-300 mb-12">Contact us today to get started</p>
+                <h2 class="text-3xl md:text-4xl font-bold mb-8">Ready to Transform Your Sales?</h2>
+                <p class="text-xl text-gray-300 mb-12">Take the first step towards unprecedented growth</p>
                 <div class="flex flex-col items-center justify-center space-y-6">
-                    <a href="mailto:hola@elmejorvendedor.com" class="text-lg text-purple-400 hover:text-purple-300 transition-colors duration-300">
+                    <a href="mailto:hola@elmejorvendedor.com" class="text-lg text-purple-400 hover:text-purple-300 transition-colors duration-300 transform hover:scale-105">
                         hola@elmejorvendedor.com
                     </a>
                     <a href="https://elmejorvendedor.com" class="inline-block bg-gradient-to-r from-purple-600 to-pink-600 py-4 px-8 rounded-full text-lg font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
-                        Get Started Now
+                        Start Your Transformation
                     </a>
                 </div>
             </div>
@@ -132,27 +257,33 @@
             <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
                 <div>
                     <h3 class="text-xl font-bold mb-4">El Mejor Vendedor</h3>
-                    <p class="text-gray-400">Your partner in sales excellence</p>
+                    <p class="text-gray-400">Transforming sales performance worldwide</p>
                 </div>
                 <div>
                     <h4 class="font-semibold mb-4">Quick Links</h4>
                     <ul class="space-y-2">
                         <li><a href="#features" class="text-gray-400 hover:text-white transition-colors duration-300">Features</a></li>
                         <li><a href="#benefits" class="text-gray-400 hover:text-white transition-colors duration-300">Benefits</a></li>
+                        <li><a href="#testimonials" class="text-gray-400 hover:text-white transition-colors duration-300">Testimonials</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition-colors duration-300">About Us</a></li>
+                        <li><a href="#faq" class="text-gray-400 hover:text-white transition-colors duration-300">FAQ</a></li>
                         <li><a href="#contact" class="text-gray-400 hover:text-white transition-colors duration-300">Contact</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4 class="font-semibold mb-4">Legal</h4>
                     <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Privacy Policy</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Terms of Service</a></li>
+                        <li><a href="https://soypepediaz.github.io/hola-mundo--2025-06-13-u6j1m/privacy.html" class="text-gray-400 hover:text-white transition-colors duration-300">Privacy Policy</a></li>
+                        <li><a href="https://soypepediaz.github.io/hola-mundo--2025-06-13-u6j1m/terms.html" class="text-gray-400 hover:text-white transition-colors duration-300">Terms of Service</a></li>
+                        <li><a href="https://soypepediaz.github.io/hola-mundo--2025-06-13-u6j1m/blog.html" class="text-gray-400 hover:text-white transition-colors duration-300">Blog</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4 class="font-semibold mb-4">Connect</h4>
                     <ul class="space-y-2">
                         <li><a href="mailto:hola@elmejorvendedor.com" class="text-gray-400 hover:text-white transition-colors duration-300">Email Us</a></li>
+                        <li><a href="https://linkedin.com/company/elmejorvendedor" class="text-gray-400 hover:text-white transition-colors duration-300">LinkedIn</a></li>
+                        <li><a href="https://twitter.com/elmejorvendedor" class="text-gray-400 hover:text-white transition-colors duration-300">Twitter</a></li>
                     </ul>
                 </div>
             </div>
@@ -161,5 +292,36 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('header nav .mobile-menu-button');
+            const mobileMenu = document.querySelector('header nav .mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+        });
+    </script>
+</body>
 </body>
 </html>
