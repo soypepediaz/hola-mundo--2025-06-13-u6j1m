@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hola mundo | El Mejor Vendedor</title>
+    <meta name="description" content="Un saludo para todos los humanos - Increase your sales and revenue with our premium sales solutions.">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body class="bg-gray-900 text-gray-100 font-sans antialiased">
+    <header class="fixed w-full bg-gray-900/95 backdrop-blur-sm border-b border-gray-800 z-50" x-data="{ isOpen: false }">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="/" class="text-2xl font-bold bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">
+                    El Mejor Vendedor
+                </a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#features" class="text-gray-300 hover:text-white transition-colors duration-300">Features</a>
+                    <a href="#benefits" class="text-gray-300 hover:text-white transition-colors duration-300">Benefits</a>
+                    <a href="#contact" class="text-gray-300 hover:text-white transition-colors duration-300">Contact</a>
+                </div>
+                <button @click="isOpen = !isOpen" class="md:hidden text-gray-300 hover:text-white">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            <div x-show="isOpen" class="md:hidden mt-4" @click.away="isOpen = false">
+                <div class="flex flex-col space-y-4">
+                    <a href="#features" class="text-gray-300 hover:text-white transition-colors duration-300">Features</a>
+                    <a href="#benefits" class="text-gray-300 hover:text-white transition-colors duration-300">Benefits</a>
+                    <a href="#contact" class="text-gray-300 hover:text-white transition-colors duration-300">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="relative min-h-screen flex items-center justify-center py-24 px-6">
+            <div class="absolute inset-0 bg-gradient-to-br from-purple-900/20 to-pink-900/20"></div>
+            <div class="container mx-auto text-center relative z-10">
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold mb-8 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+                    Hola mundo.
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto">
+                    Un saludo para todos los humanos
+                </p>
+                <a href="https://elmejorvendedor.com" class="inline-block bg-gradient-to-r from-purple-600 to-pink-600 py-4 px-8 rounded-full text-lg font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+                    Start Selling Now
+                </a>
+            </div>
+        </section>
+
+        <section id="features" class="py-24 px-6 bg-gray-800/50">
+            <div class="container mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+                    Premium Sales Features
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                    <div class="bg-gray-800 rounded-2xl p-8 shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300">
+                        <div class="text-purple-400 mb-4">
+                            <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">Vender</h3>
+                        <p class="text-gray-400">Maximize your sales potential with our advanced selling tools and strategies.</p>
+                    </div>
+                    <div class="bg-gray-800 rounded-2xl p-8 shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300">
+                        <div class="text-pink-400 mb-4">
+                            <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">Vender más</h3>
+                        <p class="text-gray-400">Scale your business with proven sales techniques and automation.</p>
+                    </div>
+                    <div class="bg-gray-800 rounded-2xl p-8 shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300">
+                        <div class="text-purple-400 mb-4">
+                            <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">Vender siempre</h3>
+                        <p class="text-gray-400">Maintain consistent sales growth with our sustainable strategies.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="benefits" class="py-24 px-6">
+            <div class="container mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+                    Why Choose Us
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                    <div class="bg-gradient-to-br from-purple-900/50 to-pink-900/50 rounded-2xl p-8">
+                        <h3 class="text-xl font-bold mb-4">Más ventas</h3>
+                        <p class="text-gray-300">Increase your revenue streams and grow your business exponentially.</p>
+                    </div>
+                    <div class="bg-gradient-to-br from-purple-900/50 to-pink-900/50 rounded-2xl p-8">
+                        <h3 class="text-xl font-bold mb-4">Más margen</h3>
+                        <p class="text-gray-300">Optimize your profit margins with our strategic pricing models.</p>
+                    </div>
+                    <div class="bg-gradient-to-br from-purple-900/50 to-pink-900/50 rounded-2xl p-8">
+                        <h3 class="text-xl font-bold mb-4">Más dineros para ti</h3>
+                        <p class="text-gray-300">Maximize your earnings and achieve financial success.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-24 px-6 bg-gradient-to-br from-purple-900/20 to-pink-900/20">
+            <div class="container mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-8">Ready to boost your sales?</h2>
+                <p class="text-xl text-gray-300 mb-12">Contact us today to get started</p>
+                <div class="flex flex-col items-center justify-center space-y-6">
+                    <a href="mailto:hola@elmejorvendedor.com" class="text-lg text-purple-400 hover:text-purple-300 transition-colors duration-300">
+                        hola@elmejorvendedor.com
+                    </a>
+                    <a href="https://elmejorvendedor.com" class="inline-block bg-gradient-to-r from-purple-600 to-pink-600 py-4 px-8 rounded-full text-lg font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+                        Get Started Now
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800/50 py-12 px-6">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">El Mejor Vendedor</h3>
+                    <p class="text-gray-400">Your partner in sales excellence</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#features" class="text-gray-400 hover:text-white transition-colors duration-300">Features</a></li>
+                        <li><a href="#benefits" class="text-gray-400 hover:text-white transition-colors duration-300">Benefits</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition-colors duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Legal</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Privacy Policy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Connect</h4>
+                    <ul class="space-y-2">
+                        <li><a href="mailto:hola@elmejorvendedor.com" class="text-gray-400 hover:text-white transition-colors duration-300">Email Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-12 pt-8 border-t border-gray-700 text-center text-gray-400">
+                <p>&copy; 2024 El Mejor Vendedor. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
